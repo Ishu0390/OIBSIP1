@@ -1,0 +1,145 @@
+*{padding: 0;margin: 0; box-sizing: border-box; font-family: sans-serif;}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.first{
+    z-index: -1;
+    width: 30%;
+    height: 100vh;
+    background: greenyellow ;
+}
+.second{
+    z-index: -1;
+    width: 40%;
+    height: 100vh;
+    background: green ;
+}
+.third{
+    z-index: -1;
+    width: 30%;
+    height: 100vh;
+    background: yellow ;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    color: #4cd137;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.logo:first-letter{
+    color: aliceblue;
+}
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: bisque;
+    padding: 8px;
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu a:after{
+    content: "";
+    position: absolute;
+    background-color: snow;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+.menu a:hover:after{
+    width: 100%;
+}
+
+
+.icon{
+    width: 150px;
+    letter-spacing: 5px;
+    justify-content: space-evenly;
+}
+
+.plate{
+    position: absolute;
+    right: 100px;
+    top: 200px;
+
+}
+.text{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: black;
+    font-size: 40px;
+}
+button{
+    padding: 10px 20px;
+    color: bisque;
+    background: green;
+    border: none;
+}
+.submenu{
+    width: 130px;
+    background-color:  rgb(6, 14, 14);
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    display: none;
+}
+.submenuitems{
+    padding: 4px;
+    background-color: black;
+    border: 2px solid yellow;
+}
+.menu:hover .submenu{
+    display: block;
+    
+}
+.text-box{
+    color: blanchedalmond;
+    position: absolute;
+    bottom: 25%;
+}
+.text-box p{
+    font-size: 20px;
+    font-weight: 50;
+    margin-left: 450px;
+    }
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+@media(max-height:100px)
+{
+    footer{
+        position: absolute;
+    }
+    header{
+        padding-top: 20px;
+    }
+}
+.footer-distributed{
+    background-color: gray;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: center;
+    font: bold 16px sans-serif;
+    margin-top: 80px;
+    width: 100%;
+    font-size: 12px;
+}
